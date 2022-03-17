@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>PTS Bahasa Inggris</title>
+</head>
+<body>
+<div>
+               Latihan Soal Simple Present vs Present Continuous
+              </div> 
+              <div>
+                =======================================================================================
+              </div> 
+              <title></title> 
+              <script language="JavaScript">
+<!--
+
+var numQues = 15;
+var numChoi = 3;
+
+var answers = new Array(25);
+answers[0] = "C. Are reading";
+answers[1] = "A. Goes";
+answers[2] = "B. Are staying";
+answers[3] = "A. Writes";
+answers[4] = "B. Am studying";
+answers[5] = "A. Sleep";
+answers[6] = "B. Does not visit";
+answers[7] = "B. Is trying";
+answers[8] = "A. Do you walk";
+answers[9] = "B. Am cooking";
+answers[10] = "A. Gives";
+answers[11] = "A. Go";
+answers[12] = "A. Does not open";
+answers[13] = "B. Is sleeping";
+answers[14] = "B. Is playing";
+
+function getScore(form) {
+var score = 0;
+var currElt;
+var currSelection;
+
+for (i=0; i<numQues; i++) {
+  currElt = i*numChoi;
+  for (j=0; j<numChoi; j++) {
+    currSelection = form.elements[currElt + j];
+    if (currSelection.checked) {
+      if (currSelection.value == answers[i]) {
+        score++;
+        break;
+      }
+    }
+  }
+}
+
+score = Math.round(score/numQues*100);
+form.percentage.value = score + "%";
+
+var correctAnswers = "";
+for (i=1; i<=numQues; i++) {
+  correctAnswers += i + ". " + answers[i-1] + "\r\n";
+}
+form.solutions.value = correctAnswers;
+
+}
+
+// -->
+</script> 
+              <form name="quiz">
+                1. A : What's the novel you ... entitled?
+               <br> B : It's Guru Aini from Andrea Hirata. It's recommended novel to read.
+               <br> 
+               <input name="q1" type="radio" value="read">A. Read
+               <br> 
+               <input name="q1" type="radio" value="have read">B. Have read
+               <br> 
+               <input name="q1" type="radio" value="C. Are reading">C. Are reading
+               <br> 
+               <br> 2. She always ... to school on foot.
+               <br> 
+               <input name="q2" type="radio" value="A. Goes">A. Goes
+               <br> 
+               <input name="q2" type="radio" value="is going">B. Is going
+               <br> 
+               <input name="q2" type="radio" value="has gone">C. Has gone
+               <br> 
+               <br> 3. We ... in an apartement now.
+               <br> 
+               <input name="q3" type="radio" value="stay">A. Stay
+               <br> 
+               <input name="q3" type="radio" value="B. Are staying">B. Are staying
+               <br> 
+               <input name="q3" type="radio" value="stayed">C. Stayed
+               <br> 
+               <br> 4. He never ... a letter to me.
+               <br> 
+               <input name="q4" type="radio" value="A. Writes">A. Writes
+               <br> 
+               <input name="q4" type="radio" value="are writing">B. Are writing
+               <br> 
+               <input name="q4" type="radio" value="will write">C. Will write
+               <br> 
+               <br> 5. "Could you be quiet, please? -- I ... Math now.
+               <br> 
+               <input name="q5" type="radio" value="study">A. Study
+               <br> 
+               <input name="q5" type="radio" value="B. Am studying">B. am studying
+               <br> 
+               <input name="q5" type="radio" value="studied">C. Studied
+               <br> 
+               <br> 6. Koalas ... for most of the day.
+               <br> 
+               <input name="q6" type="radio" value="A. Sleep">A. Sleep
+               <br> 
+               <input name="q6" type="radio" value="are sleeping">B. Are sleeping
+               <br> 
+               <input name="q6" type="radio" value="is sleeping">C. Is sleeping
+               <br> 
+               <br> 7. Her daughter ... her very often.
+               <br> 
+               <input name="q7" type="radio" value="is not visiting">A. Is not visiting
+               <br> 
+               <input name="q7" type="radio" value="B. Does not visit">B. Does not visit
+               <br> 
+               <input name="q7" type="radio" value="won't visit">C. Don't visit
+               <br> 
+               <br> 8. Look! The man ... to jump over the bridge.
+               <br> 
+               <input name="q8" type="radio" value="A. Tries">A. Tries
+               <br> 
+               <input name="q8" type="radio" value="B. Is trying">B. Is trying
+               <br> 
+               <input name="q8" type="radio" value="C. Tried">C. Tried
+               <br> 
+               <br> 9. ... to school every morning?
+               <br> 
+               <input name="q9" type="radio" value="A. Do you walk">A. Do you walk
+               <br> 
+               <input name="q9" type="radio" value="B. Are you walking">B. Are you walking
+               <br> 
+               <input name="q9" type="radio" value="C. Did you walk">C. Did you walk
+               <br> 
+               <br> 10. Can you answer the phone? --- I ... .
+               <br> 
+               <input name="q10" type="radio" value="cook">A. Cook
+               <br> 
+               <input name="q10" type="radio" value="B. Am cooking">B. Am cooking
+               <br> 
+               <input name="q10" type="radio" value="cooked">C. Cooked
+               <br> 
+               <br> 11. My mentor ... an evaluation every week.
+               <br> 
+               <input name="q11" type="radio" value="A. Gives">A. Gives
+               <br> 
+               <input name="q11" type="radio" value="B. Gave">B. Gave
+               <br> 
+               <input name="q11" type="radio" value="C. Is giving">C. Is giving
+               <br> 
+               <br> 12. We usually ... swimming at the weekend.
+               <br> 
+               <input name="q12" type="radio" value="A. Go">A. Go
+               <br> 
+               <input name="q12" type="radio" value="went">B. Went
+               <br> 
+               <input name="q12" type="radio" value="are going">C. Are going
+               <br>
+               <br> 13. The bank ... on Saturdays.
+               <br> 
+               <input name="q13" type="radio" value="A. Does not open">A. Does not open
+               <br> 
+               <input name="q13" type="radio" value="is not opening">B. Is not opening
+               <br> 
+               <input name="q13" type="radio" value="did not open">C. Did not open
+               <br> 
+               <br> 14. Sorry, you can't meet him now. He ... now.
+               <br> 
+               <input name="q14" type="radio" value="sleeps">A. Sleeps
+               <br> 
+               <input name="q14" type="radio" value="B. Is sleeping">B. Is sleeping
+               <br> 
+               <input name="q14" type="radio" value="has slept">C. Has slept
+               <br> 
+               <br> 15. " Where's Wafiq?"
+               <br> 'He ... basketball with his friends right now.'
+               <br> 
+               <input name="q15" type="radio" value="plays">A. Plays
+               <br> 
+               <input name="q15" type="radio" value="B. Is playing">B. Is playing
+               <br> 
+               <input name="q15" type="radio" value="played">C. Played
+               <br> 
+               <br> 
+               <input onclick="getScore(this.form)" type="button" value="Get score"> 
+               <input type="reset" value="Clear"> Score = 
+               <input name="percentage" size="15" type="text">
+               <br> Correct answers:
+               <br> 
+               <textarea cols="40" name="solutions" rows="4" wrap="virtual"></textarea> 
+              </form> ======================================================================================= 
+              <br> 
+              <div>
+                Demikian&nbsp;Latihan Soal Simple Present Tense vs Present Continuous Tense Materi bahasa Inggris Kelas 8 SMP/ MTs Semester 2. Jangan lupa tuliskan skor pencapaian pada kolom komentar dibawah yaa...
+              </div>
+              <div>
+               <br>
+              </div> 
+              <div>
+                Semoga bermanfaat.
+              </div> 
+</body>
+</html>
